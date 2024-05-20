@@ -113,4 +113,5 @@ chatbot
 <p><b>Mockup de cómo se vería nuestro chat:</b></p>
 <img src="img/mockup.png">
 
-<p><b>Link del cronograma de actividades/tareas:</b><a href="https://trello.com/invite/b/wVKmEHUr/ATTIb20d801048176e66d8c542abe7a70d6eE9163A8D/chatbot-riwi"></a></p>
+<p><b>Link del cronograma de actividades/tareas:</b></p>
+<a href="https://trello.com/invite/b/wVKmEHUr/ATTIb20d801048176e66d8c542abe7a70d6eE9163A8D/chatbot-riwi">Tablero de Trello</a>
