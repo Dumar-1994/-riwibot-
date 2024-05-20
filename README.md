@@ -92,7 +92,7 @@ chatbot
 <p><b>Fecha: 27-05</b></p>
 
 <p><b>Diagrama de casos de usos:</b></p>
-<img src="/-riwibot-/img/acu_general.png">
+<img src="img/acu_general.png">
 
 <p><b>Responsabilidades del equipo de desarrollo:</b></p>
 <img src="/-riwibot-/img/acu_developers.png">
