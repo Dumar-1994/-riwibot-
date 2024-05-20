@@ -2,9 +2,9 @@
 chatbot
 <h1>Nombre del proyecto: RiwiBot</h1>
 
-<p><b>Planteamiento del problema: debido al crecimiento de Riwi como empresa y a su alta demanda de información, se ve en la necesidad de implementar un canal de comunicación optimizado que brinde respuestas oportunas y eficientes.</b></p>
+<p><b>Planteamiento del problema:</b> debido al crecimiento de Riwi como empresa y a su alta demanda de información, se ve en la necesidad de implementar un canal de comunicación optimizado que brinde respuestas oportunas y eficientes.</p>
 
-<p><b>Objetivo general: automatizar procesos de comunicación entre Riwi con clientes potenciales (coworking y empresas), coders y futuros coders por medio de un chatbot en WhatsApp.</b></p>
+<p><b>Objetivo general:</b> automatizar procesos de comunicación entre Riwi con clientes potenciales (coworking y empresas), coders y futuros coders por medio de un chatbot en WhatsApp.</p>
 
 <p><b>Alcance del proyecto:</b></p>
 <p><b>Corto plazo:</b>  chatbot general de Riwi.</p>
@@ -95,7 +95,7 @@ chatbot
 <img src="img/acu_general.png">
 
 <p><b>Responsabilidades del equipo de desarrollo:</b></p>
-<img src="/-riwibot-/img/acu_developers.png">
+<img src="img/acu_developers.png">
 
 <p><b>Stoppers:</b></p>
 
@@ -108,9 +108,9 @@ chatbot
 </ul>
 
 <p><b>Diagrama de flujo:</b></p>
-<img src="/-riwibot-/img/diagrama.png">
+<img src="img/diagrama.png">
 
 <p><b>Mockup de cómo se vería nuestro chat:</b></p>
-<img src="/-riwibot-/img/mockup.png">
+<img src="img/mockup.png">
 
 <p><b>Link del cronograma de actividades/tareas:</b><a href="https://trello.com/invite/b/wVKmEHUr/ATTIb20d801048176e66d8c542abe7a70d6eE9163A8D/chatbot-riwi"></a></p>
