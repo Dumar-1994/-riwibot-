@@ -91,11 +91,14 @@ chatbot
 <p>Un entregable como prueba piloto de la fase inicial del chatbot, que da respuestas al primer acercamiento que tienen los usuarios al solicitar información, reconociendo preguntas simples y generales.</p> 
 <p><b>Fecha: 27-05</b></p>
 
-<p><b>Diagrama de casos de usos:</b></p>
+<p><b>Actores y casos de uso - general:</b></p>
 <img src="img/acu_general.png">
 
-<p><b>Responsabilidades del equipo de desarrollo:</b></p>
+<p><b>Actores y casos de uso - desarrollo:</b></p>
 <img src="img/acu_developers.png">
+
+<p><b>Actores y casos de uso - administración:</b></p>
+<img src="">
 
 <p><b>Stoppers:</b></p>
 
