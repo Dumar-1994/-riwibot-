@@ -80,7 +80,7 @@ app.post("/webhook", async (req, res) => {
     // Respuestas basadas en palabras clave
     switch (true) {
       // Respuesta para saludos
-      case containsKeyword(keywords, ["hola", "buenas", "buenos", "días", "tardes", "noches", "ola", "saludos"]):
+      case containsKeyword(keywords, ["hola", "buenas", "buenos", "dias", "tardes", "noches", "ola", "saludos"]):
         reply = {
           messaging_product: "whatsapp",
           to: message.from,
@@ -93,7 +93,7 @@ app.post("/webhook", async (req, res) => {
         };
         break;
       // Respuesta para consultas sobre cómo ser parte del centro de formación
-      case containsKeyword(keywords, ["cómo", "hacer", "parte", "pertenecer", "inscribo", "inscripción", "entrar", "ingresar", "matriculo", "matrícula","como", "inscribirme", "matricularme", "ser", "parte", "empezar"]):
+      case containsKeyword(keywords, ["como", "hacer", "parte", "pertenecer", "inscribo", "inscripcion", "entrar", "ingresar", "matriculo", "matricula","como", "inscribirme", "matricularme", "ser", "parte", "empezar"]):
         reply = {
           messaging_product: "whatsapp",
           to: message.from,
