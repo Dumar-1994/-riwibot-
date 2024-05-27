@@ -92,6 +92,19 @@ app.post("/webhook", async (req, res) => {
           },
         };
         break;
+      // Respuesta para solicitar más información.
+      case containsKeyword(keywords, ["saber mas", "informacion", "info", "riwi", "sobre", "obtener"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Somos un centro de formación integral en el desarrollo de software, habilidades para la vida y lengua extranjera (inglés), con el objetivo de transformar la vida de sus coders.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
       // Respuesta para consultas sobre cómo ser parte del centro de formación
       case containsKeyword(keywords, ["como", "hacer", "parte", "pertenecer", "inscribo", "inscripcion", "entrar", "ingresar", "matriculo", "matricula","como", "inscribirme", "matricularme", "ser", "parte", "empezar"]):
         reply = {
@@ -106,7 +119,7 @@ app.post("/webhook", async (req, res) => {
         };
         break;
       // Respuesta para consultas sobre la ubicación
-      case containsKeyword(keywords, ["ubicados", "ubicacion", "donde", "queda", "estan", "medellin", "lugar", "ciudad","donde", "locacion", "establecimiento"]):
+      case containsKeyword(keywords, ["ubicados", "ubicacion", "donde", "queda", "estan", "medellin", "lugar", "ciudad", "donde", "locacion", "establecimiento"]):
         reply = {
           messaging_product: "whatsapp",
           to: message.from,
@@ -118,6 +131,95 @@ app.post("/webhook", async (req, res) => {
           },
         };
         break;
+      // Respuesta a consultas por lo que ofrece el programa. 
+      case containsKeyword(keywords, ["programa", "ofrece", "incluye", "pensum", "trae", "enseñar", "aprender", "plan", "guia", "trata", "beneficios"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Por medio de un acuerdo, ofrecemos una beca 100% condonable, donde Riwi se compromete a brindarte formación integral en desarrollo de software, habilidades del ser e inglés siempre y cuando completes los 8 meses de entrenamiento y te quedes trabajando en una de las empresas patrocinadoras del programa durante 12 meses, posteriores al tiempo de formación. `,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
+      // Respuesta para conocer los horarios.
+      case containsKeyword(keywords, ["horarios", "sabados", "fines", "estudian", "horario", "mañana", "tarde", "noche", "por la mañana", "clases", "hora"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Nuestros horarios son de lunes a viernes, de 6:00 a.m. a 2:00 p.m. o de 2:00 p.m. a 10:00 p.m.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
+      // Respuesta a consultas por la duración total del programa.
+      case containsKeyword(keywords, ["duracion", "cuanto", "dura", "semestres", "años", "total", "tiempo", "semestre", "año", "meses"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `La duración del programa varía entre 8 y 10 meses.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
+      // Respuesta a consultas por conocimientos previos.
+      case containsKeyword(keywords, ["saberes", "conocimiento", "previo", "antes", "estudiado", "experiencia", "saberes", "anteriormente", "trabajado", "presaberes"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Solo necesitas tener habilidad en razonamiento lógico y capacidad de aprendizaje rápido.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
+      // Respuesta a consultas por sedes.
+      case containsKeyword(keywords, ["sede", "solo", "hay"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Por ahora, nuestra única sede se encuentra ubicada en Medellín. Sin embargo, nos encontramos en proceso de instalarnos en más ciudades.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
+      // Respuesta de agradecimiento.
+      case containsKeyword(keywords, ["gracias", "agradezco", "muchas"]):
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Para nosotros ha sido un placer haber respondido a tu interés en Riwi, ${senderName}. Si necesitas más información, no dudes en preguntar.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
+        break;
+      default:
+        reply = {
+          messaging_product: "whatsapp",
+          to: message.from,
+          text: {
+            body: `Lo siento, ${senderName}, no entiendo tu mensaje. Por favor, intenta preguntar algo diferente.`,
+          },
+          context: {
+            message_id: message.id,
+          },
+        };
       // Otras respuestas basadas en palabras clave...
     }
 
