@@ -98,7 +98,7 @@ chatbot
 <img src="img/acu_developers.png">
 
 <p><b>Actores y casos de uso - administración:</b></p>
-<img src="">
+<img src="img/acu_administración.png">
 
 <p><b>Stoppers:</b></p>
 
