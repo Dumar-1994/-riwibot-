@@ -113,6 +113,9 @@ chatbot
 <p><b>Diagrama de flujo:</b></p>
 <img src="img/diagrama.png">
 
+<p><b>Work Flow</b></p>
+<img src="img/WorkFlow.png">
+
 <p><b>Mockup de cómo se vería nuestro chat:</b></p>
 <img src="img/mockup.png">
 
